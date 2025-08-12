@@ -1,7 +1,5 @@
 .content-wrapper {
   width: calc(100% - 308px);
-  padding: 16px;
-  border: 2px solid #29b8e7;
   display: flex;
 }
 
@@ -13,31 +11,38 @@ section {
 .size-content {
   padding: 32px;
   font-size: 48px;
-  height: 1500px;
+  height: 300px;
   width: 100%;
-  background-color: #124658
+  background-color: #124658;
+  display: flex;
+  background-size: cover;
+  background-image: url("./../assets/img/pastaneu.png");
 }
 
 .main-wrapper {
-  gap: 2px;
-  padding: 2px;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  background-color: var(--bg_darkblue_light); 
 }
 
 header {
-  background-color: rgba(255 127 0 / 65%);
-  color: (white);
+  background-color: white;
+  color: #ff8000;
   padding: 16px;
   text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
 
-.size-content {
-    display: flex;
-    width: unset;
-    height: 300px;
-    background-size: cover;
-    background-image: url('..Bestellapp/assets/img/pasta.jpg');
+a {
+  color: black;
+  font-weight: 540;
+}
+
+ul {
+  display: flex;
+  gap: 15px; 
+  list-style: none; 
+  padding: 0;
 }
