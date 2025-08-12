@@ -7,5 +7,6 @@
   width: 100%;
   height: 100vh;
   background-color: #ff8000;
+  position: sticky;
   top: 0;
 }

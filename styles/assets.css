@@ -3,13 +3,12 @@
   display: flex;
 }
 
-section {
+/* section {
   display: block;
   unicode-bidi: isolate;
-}
+} */
 
 .size-content {
-  padding: 32px;
   font-size: 48px;
   height: 300px;
   width: 100%;
@@ -22,7 +21,7 @@ section {
 .main-wrapper {
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 header {
@@ -42,7 +41,7 @@ a {
 
 ul {
   display: flex;
-  gap: 15px; 
-  list-style: none; 
+  gap: 15px;
+  list-style: none;
   padding: 0;
 }
