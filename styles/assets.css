@@ -5,31 +5,6 @@ body {
   letter-spacing: -1px;
 }
 
-.logo {
-  width: 64px;
-  height: 64px;
-}
-
-.content-wrapper {
-  width: calc(100% - 308px);
-  display: flex;
-}
-
-.size-content {
-  font-size: 48px;
-  height: 300px;
-  width: 100%;
-  background-color: #124658;
-  display: flex;
-  background-size: cover;
-  background-image: url("./../assets/img/pastaneu.png");
-}
-
-.main-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
 header {
   background-color: white;
   color: #ff8000;
@@ -50,4 +25,103 @@ ul {
   gap: 15px;
   list-style: none;
   padding: 0;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+}
+
+.content-wrapper {
+  width: calc(100% - 308px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff8000;
+}
+
+.main-picture-content {
+  font-size: 48px;
+  height: 300px;
+  width: 100%;
+  background-color: #124658;
+  display: flex;
+  background-size: cover;
+  background-image: url("./../assets/img/pastaneu.png");
+  flex-direction: column;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.dish {
+  background-color: rgb(241, 241, 241);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dish:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.dish-img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.dish-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff8000;
+}
+
+button {
+  background-color: #ff8000;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-to-basket-notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff8000;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+
+.add-to-basket-notification.show {
+  opacity: 1;
+  pointer-events: auto;
 }

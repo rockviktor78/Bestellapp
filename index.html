@@ -19,6 +19,7 @@
     <title>Document</title>
   </head>
   <body onload="init()">
+  <div id="addToBasketNotification" class="add-to-basket-notification"></div>
     <header>
       <img class="logo" src="./assets/icons/haus.svg" alt="Logo" class="logo" />
       <h1>Mampfen-rando</h1>
@@ -33,7 +34,10 @@
     </header>
     <div class="main-wrapper">
       <section class="content-wrapper">
-        <div class="size-content"></div>
+        <div class="main-picture-content"></div>
+        <div class="content">
+          <h2>Unsere Gerichte</h2>
+          <div id="dishList"></div>
       </section>
       <section class="basket-wrapper">
         <div class="basket">Basket</div>
