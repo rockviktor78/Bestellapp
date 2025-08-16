@@ -1,43 +1,22 @@
-body {
-  font-weight: 800;
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.h2-dish {
   font-size: 24px;
-  color: white;
-  letter-spacing: -1px;
-}
-
-header {
-  background-color: white;
   color: #ff8000;
-  padding: 16px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-}
+  margin-bottom: 24px;
+  
+ }
 
-a {
-  color: black;
-  font-weight: 540;
-}
-
-ul {
-  display: flex;
-  gap: 15px;
-  list-style: none;
-  padding: 0;
-}
-
-.logo {
-  width: 64px;
-  height: 64px;
-}
-
-.content-wrapper {
+.dish-section {
   width: calc(100% - 308px);
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #ff8000;
+  gap: 48px;
 }
 
 .main-picture-content {
@@ -51,21 +30,29 @@ ul {
   flex-direction: column;
 }
 
-.main-wrapper {
+.dish-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.dish-list {
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
 }
 
 .dish {
+  height: 300px;
   background-color: rgb(241, 241, 241);
   border-radius: 8px;
   padding: 12px;
-  margin: 10px;
-  max-width: 250px;
+  margin-left: 48px;
+  margin-right: 48px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 450px;
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -77,7 +64,7 @@ ul {
 }
 
 .dish-img {
-  width: 100%;
+  width: 150px;
   border-radius: 6px;
   object-fit: cover;
 }
@@ -89,39 +76,26 @@ ul {
   margin-top: 8px;
 }
 
-.price {
-  font-weight: bold;
-  color: #ff8000;
-}
-
-button {
+.dish-button {
   background-color: #ff8000;
   color: white;
   border: none;
   padding: 6px 10px;
   cursor: pointer;
   border-radius: 4px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.add-to-basket-notification {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #ff8000;
-  color: white;
-  padding: 16px 32px;
-  border-radius: 8px;
-  font-size: 20px;
+.dish-button:active {
+  box-shadow: inset -4px 4px 2px 0 rgb(0 0 0 / 14%);
+}
+
+.price {
   font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s;
+  color: #ff8000;
 }
 
-.add-to-basket-notification.show {
-  opacity: 1;
-  pointer-events: auto;
-}
+
+
+

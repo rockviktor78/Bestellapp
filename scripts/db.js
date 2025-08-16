@@ -4,7 +4,7 @@ let myDishes = [
     price: 8.5,
     description:
       "Classic pizza with tomato sauce, mozzarella cheese, and fresh basil.",
-    image: "./assets/img/pizza-margherita.jpg",
+    image: "./assets/img/pizza-margherita.png",
   },
 
   {
@@ -12,7 +12,7 @@ let myDishes = [
     price: 9.0,
     description:
       "Delicious pizza topped with spicy salami, mozzarella cheese, and tomato sauce.",
-    image: "./assets/img/pizza-salami.jpg",
+    image: "./assets/img/pizza-salami.png",
   },
 
   {
@@ -36,7 +36,7 @@ let myDishes = [
     price: 10.5,
     description:
       "Hearty spaghetti with a rich meat sauce made from ground beef and tomatoes.",
-    image: "assets/img/spaghetti-bolognese.jpg",
+    image: "./assets/img/spaghetti-bolognese.png",
   },
 
   {
@@ -44,7 +44,7 @@ let myDishes = [
     price: 7.0,
     description:
       "Crisp romaine lettuce with Caesar dressing, croutons, and parmesan cheese.",
-    image: "assets/img/caesar-salad.png",
+    image: "./assets/img/caesar-salad.png",
   },
 
   {

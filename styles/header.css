@@ -1,0 +1,26 @@
+header {
+  background-color: white;
+  color: #ff8000;
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: black;
+  font-weight: 540;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+}
