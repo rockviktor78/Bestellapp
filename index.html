@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icons/haus.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/basket.css" />
+    <link rel="stylesheet" href="styles/standard.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/dishes.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/notification.css" />
+    <script src="script.js"></script>
+    <script src="scripts/db.js"></script>
+    <script src="scripts/template.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/includeHTML.js"></script>
+
+    <title>Mampfen-rando - Italienisches Restaurant</title>
+  </head>
+  <body onload="init();">
+    <div id="addToBasketNotification" class="add-to-basket-notification"></div>
+    <header class="navBar" w3-include-html="./templates/header.html"></header>
+
+    <main
+      id="mainContent"
+      w3-include-html="./templates/home-content.html"
+    ></main>
+
+    <footer class="footer" w3-include-html="./templates/footer.html"></footer>
+  </body>
+</html>

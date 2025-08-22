@@ -1,0 +1,27 @@
+<div class="main-wrapper">
+  <section class="dish-section">
+    <div class="main-picture-content"></div>
+    <div class="dish-content"></div>
+    <h2>Unsere Gerichte</h2>
+    <div id="dishList" class="dish-list"></div>
+  </section>
+
+  <section class="basket-wrapper">
+    <div class="basket">
+      Basket
+      <div id="basketDishes" class="basket-dishes"></div>
+      <div id="basketTotalContainer" class="basket-total-container">
+        <span>Gesamtsumme: </span>
+        <span id="basketTotal">0.00 €</span>
+      </div>
+      <button id="orderButton" class="basket-order-btn" onclick="orderBasket()">
+        Bestellung aufgeben
+      </button>
+      <div id="SayThankYou" class="hidden">
+        <div id="thankYouForOrder" class="thank-you-for-order">
+          Vielen Dank für deine Bestellung!
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

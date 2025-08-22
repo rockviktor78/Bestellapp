@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="t2">
+  <title id="t2">Минимал домик</title>
+  <path d="M32 6 L16 18 v20 a4 4 0 0 0 4 4 h20 a4 4 0 0 0 4-4 V18 Z" fill="none" stroke="#ff8000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="28" y="30" width="8" height="12" rx="1" fill="#ff8000"/>
+</svg>

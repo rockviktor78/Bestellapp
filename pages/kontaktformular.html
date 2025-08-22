@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/logo_small.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./../styles/kontaktformular.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+
+    <script src="./../script.js"></script>
+    <script src="./../scripts/includeHTML.js"></script>
+    <script src="./../scripts/kontaktformular.js"></script>
+
+    <title>Kontaktformular</title>
+  </head>
+
+  <body onload="initKontaktformular()">
+    <header class="navBar" w3-include-html="../templates/header.html"></header>
+    <form onsubmit="sendMail(event)">
+      <div class="contact-form">
+        <h1>Kontaktformular</h1>
+        <div class="person-data">
+          <input
+            class="person-data-padding"
+            type="text"
+            placeholder="Name*"
+            name="name"
+            required
+          />
+          <input
+            class="person-data-padding"
+            type="text"
+            placeholder="Vorname*"
+            name="prename"
+            required
+          />
+          <input
+            class="person-data-padding"
+            type="email"
+            placeholder="Emailadresse*"
+            name="email"
+            required
+          />
+        </div>
+        <textarea
+          class="textarea-contact"
+          placeholder="Nachricht eingeben*"
+          name="message"
+          required
+        ></textarea>
+        <button type="submit" value="Senden" class="button">Senden</button>
+        <div class="contact-checkbox">
+          <div class="datasecurity-checkbox">
+            <input
+              type="checkbox"
+              id="datasecurity"
+              name="datasecurity"
+              required
+            />
+            <label for="datasecurity">Datenschutzrichtlinien gelesen*</label>
+          </div>
+          <div class="newsletter-checkbox">
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter">Newsletter erhalten</label>
+          </div>
+        </div>
+        <p>*notwendige Angaben</p>
+      </div>
+    </form>
+    <footer class="footer" w3-include-html="../templates/footer.html"></footer>
+  </body>
+</html>

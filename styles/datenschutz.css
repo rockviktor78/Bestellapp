@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding-top: 0.8rem;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 24px;
+  color: orange;
+}
+
+h5 {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: orange;
+}
+
+h6 {
+  margin-bottom: 0;
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.datenschutz-link {
+  text-decoration: none;
+  color: orange;
+}
+
+.datenschutz-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile version - Very small devices */
+@media only screen and (max-width: 360px) and (min-width: 321px) {
+  body {
+    align-items: center;
+    height: 100dvh;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .datenschutz {
+    padding: 15px 15px 100px 15px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  h5 {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 24px;
+  }
+
+  h6 {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  ul {
+    padding-left: 24px;
+  }
+}
+
+/* Mobile version - Extra small devices (300px) */
+@media only screen and (max-width: 320px) {
+  body {
+    align-items: center;
+    height: 100dvh;
+  }
+
+  p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .datenschutz {
+    padding: 10px 10px 80px 10px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  h5 {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  h6 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  .datenschutz-link {
+    font-size: 11px;
+  }
+}
+
+/* Mobile version */
+@media only screen and (max-width: 420px) and (min-width: 361px) {
+  body {
+    align-items: center;
+    height: 100dvh;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .datenschutz {
+    padding: 20px 20px 126px 20px;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .impressum {
+    padding: 8px;
+    font-size: 12px;
+    margin-top: 24px;
+    margin-bottom: 5rem;
+    max-width: 720px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  h5 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 32px;
+  }
+
+  ul {
+    padding-left: 32px;
+  }
+}
+
+/* Tablet version */
+@media only screen and (max-width: 720px) and (min-width: 421px) {
+  body {
+    align-items: center;
+    height: 100dvh;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .datenschutz {
+    padding: 20px 20px 126px 20px;
+  }
+
+  .impressum {
+    padding: 8px 96px;
+    font-size: 12px;
+    margin-top: 24px;
+    margin-bottom: 5rem;
+    max-width: 720px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  h5 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 83px;
+  }
+
+  ul {
+    padding-left: 32px;
+  }
+}
+
+/* Desktop version */
+@media only screen and (max-width: 3333px) and (min-width: 721px) {
+  body {
+    align-items: center;
+    height: 100dvh;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .datenschutz {
+    padding: 40px 80px 126px 80px;
+  }
+
+  .impressum {
+    padding: 8px 96px;
+    font-size: 12px;
+    margin-top: 24px;
+    margin-bottom: 5rem;
+    max-width: 720px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  h5 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 83px;
+  }
+
+  ul {
+    padding-left: 32px;
+  }
+}

@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global sticky footer setup */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.impressum {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+p {
+  text-align: justify;
+}
+
+
+/* Mobile version - Small devices */
+@media only screen and (max-width: 380px) and (min-width: 361px) {
+  .impressum {
+    padding: 15px 25px;
+    font-size: 12px;
+    min-height: calc(100vh - 100px);
+    max-width: 80%;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
+    color: orange;
+  }
+
+  h5 {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 18px;
+    color: orange;
+  }
+}
+
+/* Mobile version - Very small devices */
+@media only screen and (max-width: 360px) and (min-width: 321px) {
+  .impressum {
+    padding: 12px 20px;
+    font-size: 14px;
+    min-height: calc(100vh - 80px);
+    max-width: 100%;
+  }
+ 
+  h4 {
+    font-weight: 600;
+    font-size: 16px;
+    color: orange;
+  }
+
+  h5 {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 15px;
+    color: orange;
+  }
+}
+
+
+/* Mobile version - Original */
+@media only screen and (max-width: 720px) and (min-width: 381px) {
+  .impressum {
+    padding: 8px 64px;
+    font-size: 12px;
+    min-height: calc(100vh - 110px);
+    max-width: 720px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 20px;
+    color: orange;
+  }
+
+  h5 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    color: orange;
+  }
+}
+
+/* Desktop version */
+@media only screen and (max-width: 3333px) and (min-width: 721px) {
+  .impressum {
+    padding: 8px 96px;
+    font-size: 12px;
+    min-height: calc(100vh - 120px);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 25px;
+    color: orange;
+  }
+
+  h5 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 83px;
+    color: orange;
+  }
+}
+
+

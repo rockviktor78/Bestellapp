@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icons/haus.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/standard.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <script src="../scripts/includeHTML.js"></script>
+    <script src="../scripts/about.js"></script>
+    <title>Über uns - Mampfen-rando</title>
+  </head>
+  <body onload="initAbout()">
+    <header class="navBar" w3-include-html="../templates/header.html"></header>
+
+    <main
+      id="mainContent"
+      w3-include-html="../templates/about-content.html"
+    ></main>
+
+    <footer class="footer" w3-include-html="../templates/footer.html"></footer>
+  </body>
+</html>
