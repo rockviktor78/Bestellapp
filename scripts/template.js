@@ -44,3 +44,12 @@ function xy(basketContainer, dishName, count, price) {
     </tr>
   `;
 }
+
+/* script-mobile-menu*/
+function slideIn() {
+  document.getElementById("slide").classList.add("show-overlay-menu");
+}
+function closeMenu() {
+  document.getElementById("slide").classList.remove("show-overlay-menu");
+}
+
