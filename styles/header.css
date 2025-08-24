@@ -9,12 +9,7 @@ header {
   align-items: center;
 }
 
-.logo {
-  width: 64px;
-  height: 64px;
-}
-
-nav ul {
+.menu-bar {
   display: flex;
   gap: 15px;
   list-style: none;
@@ -22,17 +17,25 @@ nav ul {
   margin: 0;
 }
 
-nav a {
+.menu-bar a {
   color: black;
   font-weight: 540;
   text-decoration: none;
 }
 
-nav a:hover {
+.menu-bar a:hover {
   color: #ff8000;
 }
-.mobile-menu {
-    display: none;
+
+.d-none a {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.d-none {
+  display: none;
+  z-index: 999;
 }
 
 @media only screen and (max-width: 820px) {
@@ -40,14 +43,14 @@ nav a:hover {
     align-items: center;
   }
 
-  .logo {
+  .header-logo {
     width: 48px;
     height: 48px;
   }
 
-  nav ul {
-     align-items: center;
-     }
+  .menu-bar {
+    align-items: center;
+  }
 
   H1 {
     font-size: 34px;
@@ -56,11 +59,23 @@ nav a:hover {
 
   a {
     font-size: 20px;
-  } 
-
+  }
 }
 
-.overlay-menu {
+@media only screen and (max-width: 620px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .d-none {
+    display: flex;
+  }
+
+  a {
+    display: none;
+  }
+
+  .overlay-menu {
     position: absolute;
     top: 0;
     right: 0;
@@ -74,45 +89,58 @@ nav a:hover {
     transition: all 225ms ease-in-out;
     box-shadow: -4px 4px 8px rgb(230, 230, 230);
     border: 0;
-
-}
-
-@media only screen and (max-width: 620px) {
-  .mobile-menu {
-    display: block;
   }
 
-   .mobile-menu {
-        display: flex;
-    }
-       
-    .nav-links {
-    display: none;
-   }
-}
+  .overlay-menu a {
+    padding-top: 24px;
+    padding-left: 24px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
 
+  .overlay-menu a:hover {
+    color: #ff8000;
+    text-decoration: underline;
+  }
+
+  .show-overlay-menu {
+    transform: translateX(0px);
+  }
+
+  .close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #ff8000;
+    color: white;
+    border: 0;
+    padding: 4px 8px;
+    border-radius: 8px;
+  }
+
+  .close-button:hover {
+    background-color: #c76300;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    right: 16px;
+    width: 32px;
+    top: 16px;
+    cursor: pointer;
+  }
+
+}
 
 @media only screen and (max-width: 580px) and (min-width: 381px) {
   h1 {
     font-size: 28px;
   }
 
-  .logo {
+  .logo-header {
     width: 36px;
     height: 36px;
-  }
-
-   a {
-    display: none;
-   }
-
-   .mobile-menu {
-    position: absolute;
-    right: 16px;
-    width: 32px;
-    top: 16px;
-    cursor: pointer;
-
   }
 }
 
@@ -125,8 +153,8 @@ nav a:hover {
     width: 34px;
     height: 34px;
   }
-}
 
-  .nav {  
+  .nav {
     font-size: 14px;
   }
+}

@@ -1,41 +1,30 @@
-<a href="../index.html" onclick="return handleNavigation('../index.html')">
-  <img class="logo" src="../assets/icons/haus.svg" alt="Logo" />
-</a>
-<h1>Mampfen-rando</h1>
+   <div class="logo-container">
+     <a href="../index.html" onclick="return handleNavigation('../index.html')">
+     <img class="header-logo" src="../assets/icons/haus.svg" alt="header-logo" />
+     </a>
+   </div>
 
-<nav class="nav-links">
-  <ul>
-    <li>
-      <a
-        href="../pages/products.html"
+    <h1>Mampfen-rando</h1>
+
+    <div class="menu-bar">
+      <a href="../pages/products.html"
         onclick="return handleNavigation('../pages/products.html')"
-        >Produkte</a
-      >
-    </li>
-    <li>
-      <a
-        href="../pages/contact.html"
+        >Produkte</a>
+      <a href="../pages/contact.html"
         onclick="return handleNavigation('../pages/contact.html')"
-        >Kontakt</a
-      >
-    </li>
-    <li>
-      <a
-        href="../pages/about.html"
+        >Kontakt</a>
+      <a href="../pages/about.html"
         onclick="return handleNavigation('../pages/about.html')"
-        >Über uns</a
-      >
-    </li>
-  </ul>
+        >Über uns</a>
+    </div>
 
-   <div class="d-none">
+    <div class="d-none">
         <img class="mobile-menu" src="./assets/icons/bars-solid.svg" onclick="slideIn()">
         <div id="slide" class="overlay-menu">
-            <a href="./index.html">Start</a>
-            <a href="recipe_lasagna.html">Rezept des Tages</a>
-            <a href="kontaktformular.html">Kontakt</a>
-            <a href="impressum.html">Impressum</a>
-            <button onclick="closeMenu()" class="close-button">Close</button>
+          <a href="../pages/products.html" onclick="return handleNavigation('../pages/products.html')">Produkte</a>
+          <a href="../pages/contact.html" onclick="return handleNavigation('../pages/contact.html')">Kontakt</a>
+          <a href="../pages/about.html"onclick="return handleNavigation('../pages/about.html')">Über uns</a>
+          <button onclick="closeMenu()" class="close-button">Close</button>
         </div>
     </div>
-</nav>
+
