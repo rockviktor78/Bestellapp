@@ -56,9 +56,7 @@ nav a:hover {
 
   a {
     font-size: 20px;
-  }
-
- 
+  } 
 
 }
 
@@ -83,11 +81,12 @@ nav a:hover {
   .mobile-menu {
     display: block;
   }
-   .d-none {
+
+   .mobile-menu {
         display: flex;
     }
        
-    a {
+    .nav-links {
     display: none;
    }
 }
