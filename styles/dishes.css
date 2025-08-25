@@ -39,11 +39,11 @@ h2 {
 }
 
 .dish {
-  height: 300px;
+  min-height: 320px;
   background-color: rgb(241, 241, 241);
   border-radius: 8px;
   padding: 12px;
-  margin: 22px; 
+  margin: 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
