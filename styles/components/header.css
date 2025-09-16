@@ -1,0 +1,346 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #b7807c;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.header_logo {
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.header_logo-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header_logo-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(35%) sepia(47%) saturate(1234%)
+    hue-rotate(343deg) brightness(91%) contrast(87%);
+  order: -1;
+  flex-shrink: 0;
+}
+
+.header_logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ab4c2f;
+  white-space: nowrap;
+  order: 1;
+}
+
+.header_nav {
+  display: none;
+  min-width: 0;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.header_nav-btn {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background-color: transparent;
+  color: #462521;
+  transition: all 0.2s ease;
+  min-height: 2.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  margin-left: 0.3rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+
+.header_nav-btn:hover {
+  background-color: #eca660;
+  color: #462521;
+}
+
+.header_nav-btn.active {
+  background-color: #eca660;
+  color: #462521;
+}
+
+.header_nav-btn--basket {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #ab4c2f;
+  color: #ffffff;
+  border: 1px solid #ab4c2f;
+  min-width: auto;
+  flex-shrink: 0;
+  padding: 0.4rem 0.6rem;
+}
+
+.header_nav-btn--basket:hover {
+  background-color: #593f3a;
+  color: #ffffff;
+  border-color: #593f3a;
+}
+
+.header_nav-btn--basket.active {
+  background-color: #593f3a;
+  color: #ffffff;
+  border-color: #593f3a;
+}
+
+.header_basket-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.header_mobile-toggle {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header_hamburger {
+  width: 1.5rem;
+  height: 2px;
+  background-color: #ab4c2f;
+  transition: all 0.3s ease;
+}
+
+.header_mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -210%;
+  width: 18rem;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  transition: right 0.3s ease;
+  z-index: 200;
+  padding: 1rem;
+}
+
+.header_mobile-menu--open {
+  right: 0;
+  background-color: #ede5df;
+}
+
+.header_mobile-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ab4c2f;
+}
+
+.header_mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.header_mobile-btn {
+  padding: 1rem;
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #462521;
+  font-size: 1.125rem;
+  border-radius: 0.5rem;
+  min-height: 2.75rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.header_mobile-btn:hover {
+  background-color: #eca660;
+  color: #462521;
+}
+
+/* Animation für einzelne Buttons mit staggered delay */
+.header_mobile-menu--open .header_mobile-btn:nth-child(1) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.header_mobile-menu--open .header_mobile-btn:nth-child(2) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.header_mobile-menu--open .header_mobile-btn:nth-child(3) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+
+.header_mobile-menu--open .header_mobile-btn:nth-child(4) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.header_mobile-menu--open .header_mobile-btn:nth-child(5) {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.6s;
+}
+
+/* Reset Styles für Header - weniger spezifisch */
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+  .header_logo-text {
+    font-size: 1rem;
+  }
+
+  .header_container {
+    padding: 0.5rem;
+  }
+
+  .header_logo-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .header_logo-text {
+    font-size: 1.3rem;
+  }
+
+  .header_container {
+    padding: 0.75rem;
+  }
+
+  .header_logo-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 820px) {
+  .header_container {
+    padding: 1.5rem;
+  }
+
+  .header_nav {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .header_mobile-toggle {
+    display: none;
+  }
+
+  .header_logo-text {
+    font-size: 2.2rem;
+    white-space: nowrap;
+  }
+}
+
+/* Specific fix for narrow tablets */
+@media (min-width: 768px) and (max-width: 900px) {
+  .header_nav-btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    margin-left: 0.2rem;
+  }
+
+  .header_nav {
+    gap: 0.1rem;
+  }
+
+  .header_logo-text {
+    font-size: 1.8rem;
+  }
+
+  .header_nav-btn--basket {
+    padding: 0.3rem 0.5rem;
+    gap: 0.2rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1080px) {
+  .header_container {
+    padding: 1.5rem 2rem;
+  }
+
+  .header_nav {
+    gap: 1rem;
+  }
+
+  .header_nav-btn {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .header_nav-btn--basket {
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .header_logo-text {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large desktop screens */
+@media (min-width: 1200px) {
+  .header_logo-btn {
+    gap: 1rem;
+  }
+
+  .header_logo-icon {
+    margin-left: -0.5rem;
+  }
+}
