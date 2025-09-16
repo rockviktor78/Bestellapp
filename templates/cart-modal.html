@@ -1,0 +1,41 @@
+<div class="cart-modal" id="cartModal">
+  <div class="cart-modal_overlay" id="cartModalOverlay"></div>
+  <div class="cart-modal_content">
+    <div class="cart-modal_header">
+      <h3 class="cart-modal_title">Warenkorb</h3>
+      <button
+        class="cart-modal_close"
+        id="cartModalClose"
+        aria-label="Warenkorb schließen"
+      >
+        ×
+      </button>
+    </div>
+
+    <div class="cart-modal_body">
+      <div class="cart-empty" id="cartEmpty">
+        <span class="cart-empty_icon">🛒</span>
+        <p class="cart-empty_text">Ihr Warenkorb ist leer</p>
+        <button class="cart-empty_btn" id="cartEmptyMenuBtn">
+          Zur Speisekarte
+        </button>
+      </div>
+
+      <div class="cart-items" id="cartItems"></div>
+    </div>
+
+    <div class="cart-modal_footer" id="cartModalFooter">
+      <div class="cart-total">
+        <span class="cart-total_label">Gesamt:</span>
+        <span class="cart-total_amount" id="cartTotalAmount">0,00 €</span>
+      </div>
+      <div
+        id="cartDeliveryInfo"
+        style="margin-top: 1em; color: #444; font-size: 1em"
+      >
+        <!-- Delivery info is displayed here -->
+      </div>
+      <button class="cart-checkout_btn" id="cartCheckoutBtn">Zur Kasse</button>
+    </div>
+  </div>
+</div>
