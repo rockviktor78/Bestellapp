@@ -1,0 +1,258 @@
+<section class="menu">
+  <div class="menu_container">
+    <h2 class="menu_title">Unsere Speisekarte</h2>
+
+    <div class="menu_category">
+      <h3 class="category_title">
+        Pizza
+        <button
+          class="mobile-cart-fab"
+          id="mobileCartFAB"
+          style="display: none"
+        >
+          🛒
+          <span class="mobile-cart-fab_count" id="mobileCartFABCount">0</span>
+        </button>
+      </h3>
+      <div class="menu_items">
+        <div class="menu_item" data-dish="pizza-margherita">
+          <img
+            class="item_image"
+            src="./assets/img/pizza-margherita.png"
+            alt="Pizza Margherita"
+          />
+          <div class="item_info">
+            <h4 class="item_name">Pizza Margherita</h4>
+            <p class="item_description">
+              Classic pizza with tomato sauce, mozzarella cheese, and fresh
+              basil.
+            </p>
+          </div>
+          <div class="item_actions">
+            <span class="item_price">8,50 €</span>
+            <button
+              class="add_btn"
+              data-name="Pizza Margherita"
+              data-price="8.5"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div class="menu_item" data-dish="pizza-salami">
+          <img
+            class="item_image"
+            src="./assets/img/pizza-salami.png"
+            alt="Pizza Salami"
+          />
+          <div class="item_info">
+            <h4 class="item_name">Pizza Salami</h4>
+            <p class="item_description">
+              Delicious pizza topped with spicy salami, mozzarella cheese, and
+              tomato sauce.
+            </p>
+          </div>
+          <div class="item_actions">
+            <span class="item_price">9,00 €</span>
+            <button class="add_btn" data-name="Pizza Salami" data-price="9.0">
+              +
+            </button>
+          </div>
+        </div>
+        <div class="menu_item" data-dish="pizza-vegetarisch">
+          <img
+            class="item_image"
+            src="./assets/img/pizza-vegetarisch.png"
+            alt="Pizza Vegetarisch"
+          />
+          <div class="item_info">
+            <h4 class="item_name">Pizza Vegetarisch</h4>
+            <p class="item_description">
+              Pizza mit frischem Spinat, saftigen Kirschtomaten und cremigem
+              Mozzarella auf würzige Tomatensauce und knusprigem Teig. Perfekt
+              für alle, die italienischen Genuss ohne Fleisch lieben!
+            </p>
+          </div>
+          <div class="item_actions">
+            <span class="item_price">7,50 €</span>
+            <button
+              class="add_btn"
+              data-name="Pizza Vegetarisch"
+              data-price="7.5"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div class="menu_item" data-dish="pizza-funghi">
+          <img
+            class="item_image"
+            src="./assets/img/pizza-funghi.png"
+            alt="Pizza Funghi"
+          />
+          <div class="item_info">
+            <h4 class="item_name">Pizza Funghi</h4>
+            <p class="item_description">
+              Savory pizza with mushrooms, mozzarella cheese, and a hint of
+              garlic.
+            </p>
+          </div>
+          <div class="item_actions">
+            <span class="item_price">9,50 €</span>
+            <button class="add_btn" data-name="Pizza Funghi" data-price="9.5">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu_category">
+      <h3 class="category_title">Pasta</h3>
+      <div class="menu_items">
+        <div class="menu_item" data-dish="spaghetti-carbonara">
+          <img
+            class="item_image"
+            src="./assets/img/spaghetti-carbonara.png"
+            alt="Spaghetti Carbonara"
+          />
+          <div class="item_info">
+            <h4 class="item_name">Spaghetti Carbonara</h4>
+            <p class="item_description">
+              Traditional Roman pasta dish with eggs, cheese, pancetta, and
+              pepper.
+            </p>
+          </div>
+          <div class="item_actions">
+            <span class="item_price">10,00 €</span>
+            <button
+              class="add_btn"
+              data-name="Spaghetti Carbonara"
+              data-price="10.0"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div class="menu_item" data-dish="spaghetti-bolognese">
+          <img
+            class="item_image"
+            src="./assets/img/spaghetti-bolognese.png"
+            alt="Spaghetti Bolognese"
+          />
+          <div class="item_info">
+            <h4 class="item_name">Spaghetti Bolognese</h4>
+            <p class="item_description">
+              Hearty spaghetti with a rich meat sauce made from ground beef and
+              tomatoes.
+            </p>
+          </div>
+          <div class="item_actions">
+            <span class="item_price">10,50 €</span>
+            <button
+              class="add_btn"
+              data-name="Spaghetti Bolognese"
+              data-price="10.5"
+            >
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu_category">
+      <h3 class="category_title">Salate</h3>
+      <div class="menu_items">
+        <div class="menu_item" data-dish="caesar-salad">
+          <img
+            class="item_image"
+            src="./assets/img/caesar-salad.png"
+            alt="Caesar Salad"
+          />
+          <div class="item_info">
+            <h4 class="item_name">Caesar Salad</h4>
+            <p class="item_description">
+              Crisp romaine lettuce with Caesar dressing, croutons, and parmesan
+              cheese.
+            </p>
+          </div>
+          <div class="item_actions">
+            <span class="item_price">7,00 €</span>
+            <button class="add_btn" data-name="Caesar Salad" data-price="7.0">
+              +
+            </button>
+          </div>
+        </div>
+        <div class="menu_item" data-dish="mixed-salad">
+          <img
+            class="item_image"
+            src="./assets/img/mixed-salad.png"
+            alt="Gemischter Salat"
+          />
+          <div class="item_info">
+            <h4 class="item_name">Gemischter Salat</h4>
+            <p class="item_description">
+              Fresh mixed greens with tomatoes, cucumbers, and Italian
+              vinaigrette.
+            </p>
+          </div>
+          <div class="item_actions">
+            <span class="item_price">6,50 €</span>
+            <button
+              class="add_btn"
+              data-name="Gemischter Salat"
+              data-price="6.5"
+            >
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu_category">
+      <h3 class="category_title">Desserts</h3>
+      <div class="menu_items">
+        <div class="menu_item" data-dish="tiramisu">
+          <img
+            class="item_image"
+            src="./assets/img/tiramisu.png"
+            alt="Tiramisu"
+          />
+          <div class="item_info">
+            <h4 class="item_name">Tiramisu</h4>
+            <p class="item_description">
+              A classic Italian dessert made with coffee-soaked ladyfingers and
+              mascarpone cheese.
+            </p>
+          </div>
+          <div class="item_actions">
+            <span class="item_price">5,50 €</span>
+            <button class="add_btn" data-name="Tiramisu" data-price="5.5">
+              +
+            </button>
+          </div>
+        </div>
+        <div class="menu_item" data-dish="panna-cotta">
+          <img
+            class="item_image"
+            src="./assets/img/panna-cotta.jpg"
+            alt="Panna Cotta"
+          />
+          <div class="item_info">
+            <h4 class="item_name">Panna Cotta</h4>
+            <p class="item_description">
+              Silky smooth vanilla panna cotta with fresh berry coulis.
+            </p>
+          </div>
+          <div class="item_actions">
+            <span class="item_price">5,00 €</span>
+            <button class="add_btn" data-name="Panna Cotta" data-price="5.0">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
