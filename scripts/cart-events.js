@@ -354,4 +354,4 @@ window.cartEvents = {
   initEmptyCartButton,
   initPageLoadedListener,
   processCheckout,
-};
+};  // End of cart-events.js

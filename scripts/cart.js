@@ -64,6 +64,6 @@ if (typeof module !== "undefined" && module.exports) {
   module.exports = {
     initCart,
   };
-}
+};
 // End of cart.js
 

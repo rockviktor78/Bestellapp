@@ -80,4 +80,4 @@ document.addEventListener("DOMContentLoaded", includeHTML);
 // Export für Module (falls verwendet)
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { includeHTML };
-}
+} // End of includeHTML.js

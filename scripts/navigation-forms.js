@@ -371,4 +371,4 @@ window.navigationForms = {
   showSuccessPopup,
   showErrorPopup,
   showFormStatus,
-};
+};  // End of navigation-forms.js

@@ -88,3 +88,4 @@ if (typeof module !== "undefined" && module.exports) {
 
 // Make it available globally
 window.dishesData = dishesData;
+// End of data.js

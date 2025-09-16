@@ -351,4 +351,4 @@ window.navigationCore = {
   initContentContainer,
   initNavigationEventListeners,
   initDynamicEventListeners,
-};
+};  // End of navigation-core.js

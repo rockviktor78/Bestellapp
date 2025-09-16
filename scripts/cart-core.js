@@ -360,4 +360,4 @@ window.cartCore = {
   updateCartDisplay,
   initAddButtons,
   showAddToCartMessage,
-};
+}; // End of cart-core.js
