@@ -9,12 +9,17 @@
     <link rel="icon" type="image/svg+xml" href="assets/icons/house.svg" />
     <link rel="shortcut icon" href="assets/icons/house.svg" />
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/components/header.css" />
-    <link rel="stylesheet" href="styles/components/about.css" />
     <link rel="stylesheet" href="styles/components/home.css" />
+    <link rel="stylesheet" href="styles/components/menu.css" />
+    <link rel="stylesheet" href="styles/components/about.css" />
+    <link rel="stylesheet" href="styles/components/contact.css" />
     <link rel="stylesheet" href="styles/components/footer.css" />
+    <link rel="stylesheet" href="styles/components/cart.css" />
+    <link rel="stylesheet" href="styles/components/datenschutz.css" />
+    <link rel="stylesheet" href="styles/components/impressum.css" />
+    <link rel="stylesheet" href="styles/components/agb.css" />
   </head>
   <body>
     <div id="header" w3-include-html="templates/header.html"></div>
@@ -29,5 +34,19 @@
 
     <script type="module" src="scripts/includeHTML.js"></script>
     <script type="module" src="scripts/data.js"></script>
+    <script type="module" src="scripts/storage.js"></script>
+    <script type="module" src="scripts/templateHTML.js"></script>
+
+    <!-- Cart modules -->
+    <script type="module" src="scripts/cart-core.js"></script>
+    <script type="module" src="scripts/cart-ui.js"></script>
+    <script type="module" src="scripts/cart-events.js"></script>
+    <script type="module" src="scripts/cart.js"></script>
+
+    <!-- Navigation modules -->
+    <script type="module" src="scripts/navigation-mobile.js"></script>
+    <script type="module" src="scripts/navigation-forms.js"></script>
+    <script type="module" src="scripts/navigation-core.js"></script>
+    <script type="module" src="scripts/navigation.js"></script>
   </body>
 </html>
