@@ -1,0 +1,65 @@
+<section class="contact">
+  <div class="contact_container">
+    <h2 class="contact_title">Kontakt</h2>
+    <div class="contact_content">
+      <div class="contact_info">
+        <div class="contact_item">
+          <span class="contact_icon">📍</span>
+          <div>
+            <h4>Adresse</h4>
+            <p>Musterstraße 123<br />12345 Musterstadt</p>
+          </div>
+        </div>
+        <div class="contact_item">
+          <span class="contact_icon">📞</span>
+          <div>
+            <h4>Telefon</h4>
+            <p>+49 123 456789</p>
+          </div>
+        </div>
+        <div class="contact_item">
+          <span class="contact_icon">🕒</span>
+          <div>
+            <h4>Öffnungszeiten</h4>
+            <p>Mo-So: 11:00 - 22:00 Uhr</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact_form">
+        <h4>Nachricht senden</h4>
+        <form
+          class="form"
+          action="https://formspree.io/f/xqadolkp"
+          method="POST"
+        >
+          <label>
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              class="form_input"
+            />
+          </label>
+          <label>
+            <input
+              type="email"
+              placeholder="E-Mail"
+              name="email"
+              class="form_input"
+            />
+          </label>
+          <label>
+            <textarea
+              type="text"
+              placeholder="Ihre Nachricht an uns..."
+              name="message"
+              class="form_textarea"
+            ></textarea>
+          </label>
+          <input type="hidden" name="_replyto" value="" />
+          <button type="submit" class="form_btn">Senden</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
