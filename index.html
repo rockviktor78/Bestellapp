@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/components/header.css" />
     <link rel="stylesheet" href="styles/components/about.css" />
+    <link rel="stylesheet" href="styles/components/home.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="header" w3-include-html="templates/header.html"></div>
+
+    <main class="main-content">
+      <div id="content" w3-include-html="templates/home-content.html">
+        <!-- Dynamic content will be loaded here -->
+      </div>
+    </main>
+
+    <div id="footer" w3-include-html="templates/footer.html"></div>
+
+    <script type="module" src="scripts/includeHTML.js"></script></body>
 </html>
