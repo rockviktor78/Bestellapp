@@ -1,4 +1,4 @@
-{
+{   "liveServer.settings.port": 5501,
     "git.inputValidation": true,
     "git.inputValidationLength": 50,
     "git.inputValidationSubjectLength": 50,
@@ -14,3 +14,4 @@
         "deps"
     ]
 }
+
