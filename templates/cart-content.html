@@ -1,0 +1,36 @@
+<section class="cart">
+  <div class="cart_container">
+    <h2 class="cart_title">Warenkorb</h2>
+
+    <div class="cart_content">
+      <div class="cart_items" id="cartItems">
+        <!-- Shopping cart items are inserted dynamically here -->
+        <div class="cart_empty" id="cartEmpty">
+          <span class="empty_icon">🛒</span>
+          <h3>Ihr Warenkorb ist leer</h3>
+          <p>Fügen Sie Gerichte aus unserer Speisekarte hinzu</p>
+          <button class="empty_btn" id="goToMenuBtn">Zur Speisekarte</button>
+        </div>
+      </div>
+
+      <div class="cart_summary" id="cartSummary" style="display: none">
+        <div class="summary_content">
+          <h3>Bestellübersicht</h3>
+          <div class="summary_line">
+            <span>Zwischensumme:</span>
+            <span id="subtotal">0,00 €</span>
+          </div>
+          <div class="summary_line">
+            <span>Lieferkosten:</span>
+            <span id="deliveryCost">2,50 €</span>
+          </div>
+          <div class="summary_line summary_total">
+            <span>Gesamtsumme:</span>
+            <span id="total">0,00 €</span>
+          </div>
+          <button class="checkout_btn" id="checkoutBtn">Bestellen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
