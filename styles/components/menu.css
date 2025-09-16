@@ -133,7 +133,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 999;
+  z-index: 99;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
