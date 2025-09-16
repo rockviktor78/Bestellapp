@@ -1,0 +1,16 @@
+{
+    "git.inputValidation": true,
+    "git.inputValidationLength": 50,
+    "git.inputValidationSubjectLength": 50,
+    "scm.inputFontFamily": "monospace",
+    "gitlens.codeLens.enabled": true,
+    "gitlens.currentLine.enabled": true,
+    "conventionalCommits.scopes": [
+        "ui",
+        "api",
+        "docs",
+        "tests",
+        "config",
+        "deps"
+    ]
+}
