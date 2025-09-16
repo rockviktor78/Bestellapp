@@ -1,0 +1,74 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Development
+dev-server.js
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE/Editor
+.vscode/
+.idea/
+.project
+.classpath
+*.sublime-workspace
+.history/*
+
+# CI/CD
+.github/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+/.directory
+
+# Temporary files
+*.tmp
+*.temp
+/tmp
+/out-tsc
+
+# Build output
+/dist
+/bazel-out
+
+# Coverage reports
+/coverage
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json
+
+# SSL certificates
+csr.pem
+privateKey.pem
+certificate.pem
+
+# Apache
+.htaccess
+
+# Cache
+/.angular/cache
+.sass-cache/
+
+# Runtime
+/connect.lock
+/libpeerconnection.log
+testem.log
+/typings
+
+test-cart.html
