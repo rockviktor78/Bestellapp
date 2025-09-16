@@ -1,0 +1,121 @@
+.impressum {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  min-height: 70vh;
+  line-height: 1.7;
+}
+
+.impressum_container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.impressum_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ab4c2f;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.impressum_content {
+  font-size: 1rem;
+  color: #462521;
+}
+
+.impressum_subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ab4c2f;
+  margin: 2.5rem 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eca660;
+}
+
+.impressum_content p {
+  margin-bottom: 1.25rem;
+}
+
+.contact-info {
+  background-color: #faf8f5;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid #ab4c2f;
+  margin: 1.5rem 0;
+}
+
+.contact-info p {
+  margin-bottom: 0.75rem;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.impressum_content a {
+  color: #ab4c2f;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.impressum_content a:hover {
+  color: #593f3a;
+}
+
+.disclaimer {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  border: 1px solid #b7807c;
+  text-align: center;
+}
+
+.disclaimer p {
+  margin: 0;
+  font-size: 1rem;
+  color: #593f3a;
+}
+
+/* Responsive Design */
+@media (min-width: 300px) and (max-width: 480px) {
+  .impressum {
+    padding: 2rem 0.75rem;
+  }
+
+  .impressum_title {
+    font-size: 1.75rem;
+  }
+
+  .impressum_content {
+    font-size: 1rem;
+  }
+
+  .impressum_subtitle {
+    font-size: 1.25rem;
+  }
+
+  .contact-info {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .impressum {
+    padding: 3rem 1rem;
+  }
+
+  .impressum_title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .impressum_content {
+    font-size: 1rem;
+  }
+
+  .impressum_subtitle {
+    font-size: 1.35rem;
+    margin: 2rem 0 1.25rem 0;
+  }
+}
